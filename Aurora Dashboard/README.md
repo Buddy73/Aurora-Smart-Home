@@ -115,6 +115,13 @@ opgenomen. Zie [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) voor het privacybeleid
 - Test desktop, tablet en mobiel.
 - Verhoog `VERSION` bij iedere projectwijziging.
 
+## Aurora Design Pack
+
+De Home-view gebruikt het [Aurora Design Pack](AURORA_DESIGN_PACK.md): een
+visuele upgrade met Aurora-logo, Glow Hero Card en een consistente
+informatiehiërarchie. De upgrade wijzigt geen entiteiten, services of
+apparaatfunctionaliteit en blijft volledig binnen Storage Mode.
+
 ## Licentie
 
 Er is momenteel geen opensourcelicentie verleend. Alle rechten blijven voorbehouden aan de projecteigenaar. Zie [LICENSE.md](LICENSE.md).

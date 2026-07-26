@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — Aurora Design Pack
+
+- Home-view visueel geherstructureerd met Aurora Hero en Glow.
+- Live Energie, Live Klimaat, Media en Veiligheid als duidelijke toplagen.
+- Kamers, favoriete apparaten, camera's, 3D Printing Hub en systeemstatus
+  logisch gegroepeerd.
+- Bestaande entiteiten, acties en services ongewijzigd behouden.
+- Desktop-, tablet- en mobiele layout zonder horizontale overflow gevalideerd.
+
 ## v1.0.0 — 2026-07-26
 
 - Acht responsive Storage Mode-views voltooid.
