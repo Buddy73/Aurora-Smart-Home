@@ -1,0 +1,23 @@
+ha-card,
+.aurora-card {
+  background: var(--aurora-surface, rgba(18, 27, 48, 0.82));
+  border: 1px solid var(--aurora-border, rgba(255, 255, 255, 0.10));
+  border-radius: var(--aurora-radius-card, 18px);
+  box-shadow: var(--aurora-shadow-card, 0 10px 30px rgba(0, 0, 0, 0.24));
+  color: var(--aurora-text-primary, rgba(255, 255, 255, 0.94));
+}
+
+.aurora-card--hero {
+  border-radius: var(--aurora-radius-hero, 22px);
+  padding: var(--aurora-space-6, 24px);
+}
+
+.aurora-card--glass {
+  background: rgba(18, 27, 48, 0.72);
+}
+
+@supports (backdrop-filter: blur(12px)) {
+  .aurora-card--glass {
+    backdrop-filter: blur(12px);
+  }
+}

@@ -1,0 +1,22 @@
+button,
+.aurora-button {
+  min-height: 44px;
+  border: 1px solid var(--aurora-border, rgba(255, 255, 255, 0.10));
+  border-radius: var(--aurora-radius-sm, 12px);
+  color: var(--aurora-text-primary, rgba(255, 255, 255, 0.94));
+}
+
+.aurora-button--primary {
+  background: var(--aurora-blue, #2f6fff);
+  border-color: transparent;
+}
+
+.aurora-button--quiet {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+button:disabled,
+.aurora-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.42;
+}

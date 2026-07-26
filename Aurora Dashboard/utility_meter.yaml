@@ -1,0 +1,10 @@
+elektriciteit_import_vandaag:
+  source: sensor.p1_meter_energie_import
+  cycle: daily
+elektriciteit_export_vandaag:
+  source: sensor.p1_meter_energie_export
+  cycle: daily
+zonneproductie_vandaag:
+  source: sensor.inverter_gw3600d_ns_energy_today
+  cycle: daily
+  periodically_resetting: true

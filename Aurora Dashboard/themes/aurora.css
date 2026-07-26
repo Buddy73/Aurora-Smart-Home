@@ -1,0 +1,13 @@
+@import url("../css/base.css");
+@import url("../css/cards.css");
+@import url("../css/buttons.css");
+@import url("../css/sidebar.css");
+@import url("../css/animations.css");
+@import url("../css/responsive.css");
+
+/*
+ * Aurora CSS manifest.
+ * Home Assistant loads themes/aurora.yaml natively. This stylesheet is the
+ * canonical CSS source for controlled frontend integrations; do not register
+ * it as a Lovelace resource unless that integration explicitly supports CSS.
+ */

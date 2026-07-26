@@ -1,0 +1,4 @@
+utility_meter: !include utility_meter.yaml
+
+# Aurora gebruikt uitsluitend Home Assistant Storage Mode.
+# Registreer dashboard.yaml niet als een tweede Lovelace-dashboard.

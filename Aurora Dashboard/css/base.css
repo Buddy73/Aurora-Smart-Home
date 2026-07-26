@@ -1,0 +1,44 @@
+:root {
+  color-scheme: dark;
+  --aurora-midnight: #0b1020;
+  --aurora-surface: rgba(18, 27, 48, 0.82);
+  --aurora-surface-raised: rgba(255, 255, 255, 0.11);
+  --aurora-border: rgba(255, 255, 255, 0.10);
+  --aurora-text-primary: rgba(255, 255, 255, 0.94);
+  --aurora-text-secondary: rgba(255, 255, 255, 0.68);
+  --aurora-blue: #2f6fff;
+  --aurora-cyan: #39c6ff;
+  --aurora-emerald: #2ed573;
+  --aurora-purple: #7a5cff;
+  --aurora-amber: #ffb347;
+  --aurora-danger: #ff5f6d;
+  --aurora-space-1: 4px;
+  --aurora-space-2: 8px;
+  --aurora-space-3: 12px;
+  --aurora-space-4: 16px;
+  --aurora-space-6: 24px;
+  --aurora-space-8: 32px;
+  --aurora-radius-sm: 12px;
+  --aurora-radius-card: 18px;
+  --aurora-radius-hero: 22px;
+  --aurora-shadow-card: 0 10px 30px rgba(0, 0, 0, 0.24);
+  --aurora-font-family: Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html,
+body {
+  background: var(--aurora-midnight);
+  color: var(--aurora-text-primary);
+  font-family: var(--aurora-font-family);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 2px solid var(--aurora-cyan);
+  outline-offset: 2px;
+}

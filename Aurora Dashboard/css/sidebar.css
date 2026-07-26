@@ -1,0 +1,14 @@
+.aurora-sidebar {
+  background: #080d19;
+  border-inline-end: 1px solid var(--aurora-border, rgba(255, 255, 255, 0.10));
+  color: var(--aurora-text-secondary, rgba(255, 255, 255, 0.68));
+}
+
+.aurora-sidebar [aria-current="page"] {
+  background: rgba(47, 111, 255, 0.16);
+  color: var(--aurora-text-primary, rgba(255, 255, 255, 0.94));
+}
+
+.aurora-sidebar [aria-current="page"] ha-icon {
+  color: var(--aurora-cyan, #39c6ff);
+}

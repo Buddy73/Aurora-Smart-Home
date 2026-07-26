@@ -1,0 +1,31 @@
+.aurora-layout {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--aurora-space-4, 16px);
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: var(--aurora-space-6, 24px);
+}
+
+@media (max-width: 1100px) {
+  .aurora-layout {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    padding: var(--aurora-space-4, 16px);
+  }
+}
+
+@media (max-width: 600px) {
+  .aurora-layout {
+    display: block;
+    padding: var(--aurora-space-4, 16px);
+  }
+
+  .aurora-layout > * + * {
+    margin-top: var(--aurora-space-4, 16px);
+  }
+
+  ha-card,
+  .aurora-card {
+    border-radius: var(--aurora-radius-card, 18px);
+  }
+}
