@@ -1,5 +1,11 @@
 # Aurora Branding Guide v1.1
 
+> De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is leidend voor de
+> Aurora-visie en architectuur. Deze gids is de gedetailleerde merkreferentie.
+
+> De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is de centrale bron
+> voor brandingbesluiten; dit document blijft de gedetailleerde merkrefentie.
+
 ## Merkpositie
 
 Aurora is een rustige, premium gebruikersinterface voor het slimme huis. De

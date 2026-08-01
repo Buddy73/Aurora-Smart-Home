@@ -1,5 +1,11 @@
 # Aurora als primaire gebruikersinterface
 
+> Raadpleeg de [Aurora Developer Handbook](../DEVELOPER_HANDBOOK.md) voor de
+> bijbehorende architectuurbesluiten en ontwikkelrichtlijnen.
+
+> De [Aurora Developer Handbook](../DEVELOPER_HANDBOOK.md) bepaalt de
+> architectuurprincipes; dit document is de operationele implementatiegids.
+
 Aurora is het standaarddashboard voor dagelijkse bediening. Home Assistant
 blijft de technische beheeromgeving.
 

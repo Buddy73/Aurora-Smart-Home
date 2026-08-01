@@ -4,6 +4,8 @@
 
 ### Added
 
+- Aurora Developer Handbook als centrale bron voor Aurora-architectuur,
+  ontwerp, ontwikkeling, releases en ADR's.
 - Project Polaris Theme-, Dashboard-, Components- en Effects-pakketten.
 - Veilige installatievoorbeelden zonder persoonlijke entity-ID’s.
 - Publieke geanonimiseerde desktopmock-up.

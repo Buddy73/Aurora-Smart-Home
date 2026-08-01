@@ -1,5 +1,11 @@
 # Bijdragen aan Aurora
 
+> Lees eerst de [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md). Die bevat
+> de bindende ontwikkel-, architectuur- en releaseafspraken.
+
+> Lees eerst de [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md). Dit document
+> beschrijft de praktische bijdrageworkflow.
+
 Bedankt dat je Aurora wilt verbeteren.
 
 ## Uitgangspunten

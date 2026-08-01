@@ -114,6 +114,7 @@ opgenomen. Zie [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) voor het privacybeleid
 
 ## Documentatie
 
+- [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) — officiële bron voor architectuur, ontwerp, ontwikkeling en releases
 - [Installatiehandleiding](INSTALLATION.md)
 - [Gebruikershandleiding](USER_GUIDE.md)
 - [Dashboardstructuur](dashboard_map.md)
@@ -132,17 +133,13 @@ opgenomen. Zie [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) voor het privacybeleid
 - [Open Source Readiness](docs/OPEN_SOURCE_READINESS.md)
 - [RC1 Acceptance Review](docs/RC1_ACCEPTANCE.md)
 
-## Ontwikkelregels
+## Ontwikkeling
 
-- Werk kleine, controleerbare wijzigingen uit.
-- Behoud bestaande functionaliteit.
-- Gebruik Nederlandse titels.
-- Gebruik Sections View en maximaal twee kolommen.
-- Gebruik Mushroom Cards als standaard.
-- Gebruik Bubble Card uitsluitend voor navigatie.
-- Gebruik ApexCharts voor grafieken.
-- Test desktop, tablet en mobiel.
-- Verhoog `VERSION` bij iedere projectwijziging.
+De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is de officiële bron
+voor architectuur, ontwerpkeuzes, componentregels, ontwikkeling en releases.
+Gebruik voor feitelijke Home Assistant-entiteiten uitsluitend
+[`entities.md`](entities.md) en voor helpers uitsluitend
+[`helpers.md`](helpers.md).
 
 ## Aurora Design Pack
 

@@ -1,5 +1,11 @@
 # Aurora Modular Styling
 
+> De architectuurkeuzes en pakketgrenzen worden centraal beschreven in de
+> [Aurora Developer Handbook](../DEVELOPER_HANDBOOK.md).
+
+> Zie de [Aurora Developer Handbook](../DEVELOPER_HANDBOOK.md) voor de
+> architectuurregels die bij deze modulaire styling horen.
+
 Project Polaris separates visual styling into four independent packages. The packages contain no entities, helpers or dashboard functionality.
 
 ## Packages

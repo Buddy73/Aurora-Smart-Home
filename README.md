@@ -31,6 +31,7 @@ Het actieve dashboard gebruikt uitsluitend Home Assistant Storage Mode.
 
 ## Documentatie
 
+- [Aurora Developer Handbook](Aurora%20Dashboard/DEVELOPER_HANDBOOK.md) — centrale ontwikkel- en architectuurbron
 - [Volledige project-README](Aurora%20Dashboard/README.md)
 - [Installatiehandleiding](Aurora%20Dashboard/INSTALLATION.md)
 - [Gebruikershandleiding](Aurora%20Dashboard/USER_GUIDE.md)

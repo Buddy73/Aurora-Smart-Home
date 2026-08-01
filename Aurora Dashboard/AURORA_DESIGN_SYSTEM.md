@@ -1,5 +1,8 @@
 # Aurora Design System v1.0
 
+> De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is de centrale bron
+> voor ontwerpbesluiten; dit document blijft de gedetailleerde tokenreferentie.
+
 > De artistieke beslisregels voor sfeer en materiaalbeleving staan in
 > [`docs/DESIGN_VISION_ADDENDUM.md`](docs/DESIGN_VISION_ADDENDUM.md). Dit addendum
 > is leidend bij toekomstige ontwerpkeuzes, binnen de harde grenzen van

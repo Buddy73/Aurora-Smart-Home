@@ -1,5 +1,8 @@
 # Aurora UI Style Guide
 
+> De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is leidend wanneer deze
+> richtlijn en een architectuur- of ontwikkelbesluit elkaar overlappen.
+
 ## Paginaopbouw
 
 - Gebruik Sections View.

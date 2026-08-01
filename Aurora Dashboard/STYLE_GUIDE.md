@@ -1,5 +1,9 @@
 # Aurora Dashboard Style Guide
 
+> De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is de officiële bron
+> voor ontwikkel- en architectuurregels. Dit document is een compacte
+> kaartimplementatiereferentie.
+
 De volledige visuele specificatie staat in `AURORA_BRANDING.md`, `AURORA_DESIGN_SYSTEM.md` en `UI_STYLE_GUIDE.md`.
 
 ## Dashboardregels
