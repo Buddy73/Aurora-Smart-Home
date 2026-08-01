@@ -111,6 +111,7 @@ Als een benodigde entity ontbreekt, vraag er expliciet om in plaats van een enti
 | Functie | Entity | Type |
 |---------|--------|------|
 | Wandlamp | `light.woonkamer_wandlamp_dimmer` | Light |
+| WCD Lamp Woonkamer | `switch.wcd_lamp_woonkamer` | Switch |
 | Woonkamerlamp | `light.ac_11971da_5` | Light (dimbaar) |
 | Sierlamp | `light.sierlamp` | Light |
 | Salon 1 | `light.salon1` | Light |
@@ -241,11 +242,11 @@ Oude/dubbele entiteiten (niet gebruiken):
 
 Actieve entity:
 
-- `media_player.nest_hub_woonkamer`
+- `media_player.nesthube385`
 
 Oude/dubbele entity (niet gebruiken):
 
-- `media_player.nesthube385`
+- `media_player.nest_hub_woonkamer`
 
 ### Spotify
 

@@ -17,6 +17,17 @@
 - Storage Mode-script maakt bij iedere toepassing een gedateerde back-up.
 - README, Branding Guide en Design System gesynchroniseerd met Project Polaris.
 
+### Fixed
+
+- Wandlamp en WCD Lamp Woonkamer als twee afzonderlijke, gelijk uitgelijnde
+  kaarten weergegeven; de WCD gebruikt een geldig lampicoon.
+- Actieve Nest Hub-entiteit opnieuw vastgesteld; kaarten gebruiken nu
+  `media_player.nesthube385` in plaats van de niet-beschikbare oude entity.
+- Mediaweergaven voor Spotify, woonkamer-tv, Nest Hub, Samsung-tv, Nest Mini en
+  de logeerkamer-tv samengevoegd tot één kaart per apparaat.
+- Apparaatafbeelding en bediening blijven binnen hetzelfde kaartvlak zichtbaar,
+  inclusief de witte streamingdongle van de logeerkamer-tv.
+
 ### Removed
 
 - Persoonlijke Home Assistant-screenshots.

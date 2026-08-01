@@ -2,6 +2,10 @@
 
 > **Aurora is ontwikkeld met de filosofie dat een smart-home-dashboard niet alleen functioneel moet zijn, maar ook rust, overzicht en plezier moet brengen in het dagelijks gebruik.**
 
+> **Transparantie:** Aurora is ontwikkeld door de maintainer met AI-assistentie
+> van OpenAI Codex/ChatGPT. Ontwerpkeuzes en live dashboardgedrag zijn
+> gecontroleerd in een echte Home Assistant-installatie.
+
 ## Modulaire styling
 
 De Project Polaris-styling is opgesplitst in afzonderlijk bruikbare Theme-, Dashboard-, Components- en Effects-pakketten. Zie [`docs/MODULAR_STYLING.md`](docs/MODULAR_STYLING.md) voor installatieprofielen en de bijbehorende entry points.

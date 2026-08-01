@@ -2,6 +2,10 @@
 
 Een modern, Nederlandstalig Home Assistant-dashboard voor desktop, tablet en telefoon.
 
+> Transparantie: Aurora is ontwikkeld door de maintainer met AI-assistentie van
+> OpenAI Codex/ChatGPT. Ontwerpkeuzes en het live dashboardgedrag zijn
+> gecontroleerd in een echte Home Assistant-installatie.
+
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Storage%20Mode-41BDF5)](https://www.home-assistant.io/)
 
 ## Aurora v1.1.0-rc.1

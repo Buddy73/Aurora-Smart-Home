@@ -37,6 +37,18 @@ alleen door een werkelijk bestaand entity-ID. Maak geen fictieve placeholder.
 Controleer apparaatvoeding, netwerk, integratiestatus en Home Assistant-logboeken.
 Een tijdelijk offline apparaat is geen dashboardconfiguratiefout.
 
+## De app opent toch het dashboard Thuis
+
+Controleer onder **Profiel → Dashboard** of Aurora als standaarddashboard is
+gekozen. Deze voorkeur is accountgebonden. De Companion App kan daarnaast de
+laatst geopende route herstellen. Open daarom Aurora Home, sluit de app volledig
+af en start opnieuw. Blijft de oude route terugkomen, vernieuw dan uitsluitend
+de frontendcache of meld één keer af en opnieuw aan.
+
+De volgorde en zichtbaarheid van onderdelen in de zijbalk zijn lokaal per
+browser of apparaat. Zet Aurora daarom op iedere telefoon en tablet afzonderlijk
+bovenaan via **Profiel → Zijbalk → Bewerken**.
+
 ## ApexCharts toont geen historie
 
 - Controleer of Recorder actief is.
