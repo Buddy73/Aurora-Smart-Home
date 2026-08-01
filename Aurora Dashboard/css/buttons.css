@@ -1,18 +1,42 @@
 button,
 .aurora-button {
   min-height: 44px;
-  border: 1px solid var(--aurora-border, rgba(255, 255, 255, 0.10));
-  border-radius: var(--aurora-radius-sm, 12px);
-  color: var(--aurora-text-primary, rgba(255, 255, 255, 0.94));
+  border: 1px solid var(--aurora-border);
+  border-radius: var(--aurora-radius-sm);
+  color: var(--aurora-text-primary);
+  transition:
+    background-color var(--aurora-transition-fast, 160ms ease),
+    border-color var(--aurora-transition-fast, 160ms ease),
+    box-shadow var(--aurora-transition-fast, 160ms ease),
+    transform var(--aurora-transition-fast, 160ms ease);
 }
 
 .aurora-button--primary {
-  background: var(--aurora-blue, #2f6fff);
-  border-color: transparent;
+  background: linear-gradient(135deg, rgba(57, 198, 255, 0.88), rgba(91, 140, 255, 0.92) 52%, rgba(168, 96, 255, 0.88));
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 32px rgba(91, 140, 255, 0.18);
 }
 
 .aurora-button--quiet {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(35, 58, 96, 0.66);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.11);
+}
+
+button:hover,
+.aurora-button:hover {
+  border-color: rgba(203, 231, 255, 0.34);
+}
+
+button:focus-visible,
+.aurora-button:focus-visible {
+  outline: 2px solid var(--aurora-cyan);
+  outline-offset: 2px;
+}
+
+button:active,
+.aurora-button:active {
+  box-shadow: var(--aurora-shadow-pressed, 0 8px 22px rgba(0, 0, 0, 0.24));
+  transform: scale(0.98);
 }
 
 button:disabled,

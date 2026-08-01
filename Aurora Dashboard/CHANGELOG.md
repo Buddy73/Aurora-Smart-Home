@@ -1,13 +1,27 @@
 # Changelog
 
-## Unreleased — Aurora Design Pack
+## v1.1.0-rc.1 — 2026-07-31
 
-- Home-view visueel geherstructureerd met Aurora Hero en Glow.
-- Live Energie, Live Klimaat, Media en Veiligheid als duidelijke toplagen.
-- Kamers, favoriete apparaten, camera's, 3D Printing Hub en systeemstatus
-  logisch gegroepeerd.
-- Bestaande entiteiten, acties en services ongewijzigd behouden.
-- Desktop-, tablet- en mobiele layout zonder horizontale overflow gevalideerd.
+### Added
+
+- Project Polaris Theme-, Dashboard-, Components- en Effects-pakketten.
+- Veilige installatievoorbeelden zonder persoonlijke entity-ID’s.
+- Publieke geanonimiseerde desktopmock-up.
+- FAQ, troubleshooting, bijdrage- en securitydocumentatie.
+
+### Changed
+
+- Aurora Theme vernieuwd met premium glasmateriaal, afgeronde typografie en
+  actuele design tokens.
+- Installatieprocedure herbouwd als veilige 10–15 minuten-foundation.
+- Storage Mode-script maakt bij iedere toepassing een gedateerde back-up.
+- README, Branding Guide en Design System gesynchroniseerd met Project Polaris.
+
+### Removed
+
+- Persoonlijke Home Assistant-screenshots.
+- Fabrikantafbeeldingen zonder vastgelegde distributielicentie.
+- Persoonlijke namen en lokale paden uit publieke documentatie en voorbeelden.
 
 ## v1.0.0 — 2026-07-26
 

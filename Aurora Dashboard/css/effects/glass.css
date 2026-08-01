@@ -1,0 +1,53 @@
+ha-card::before,
+.aurora-card::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(
+    --aurora-reflection,
+    linear-gradient(118deg, rgba(255, 255, 255, 0.16) 0%, rgba(121, 207, 255, 0.06) 24%, transparent 49%)
+  );
+  content: "";
+  pointer-events: none;
+}
+
+ha-card::after,
+.aurora-card::after {
+  position: absolute;
+  inset: 0 12% auto;
+  z-index: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.48), transparent);
+  content: "";
+  pointer-events: none;
+}
+
+ha-card > *,
+.aurora-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+@supports (backdrop-filter: blur(18px)) {
+  ha-card,
+  .aurora-card,
+  .aurora-card--glass {
+    backdrop-filter: blur(var(--aurora-blur, 18px)) saturate(var(--aurora-saturation, 132%));
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  ha-card,
+  .aurora-card {
+    transition:
+      transform var(--aurora-transition-fast, 180ms ease),
+      box-shadow var(--aurora-transition-fast, 180ms ease),
+      border-color var(--aurora-transition-fast, 180ms ease);
+  }
+
+  ha-card:hover,
+  .aurora-card:hover {
+    border-color: rgba(203, 231, 255, 0.34);
+    box-shadow: var(--aurora-shadow-raised);
+    transform: translateY(-2px) scale(1.006);
+  }
+}

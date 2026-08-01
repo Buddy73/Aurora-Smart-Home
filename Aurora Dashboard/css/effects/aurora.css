@@ -1,0 +1,37 @@
+.aurora-card--energy {
+  --aurora-card-light: rgba(57, 198, 255, 0.11);
+}
+
+.aurora-card--climate {
+  --aurora-card-light: rgba(72, 224, 176, 0.10);
+}
+
+.aurora-card--media {
+  --aurora-card-light: rgba(168, 96, 255, 0.12);
+}
+
+.aurora-card--camera {
+  --aurora-card-light: rgba(80, 150, 255, 0.10);
+}
+
+.aurora-card--hobby {
+  --aurora-card-light: rgba(255, 187, 92, 0.09);
+}
+
+.aurora-card--energy,
+.aurora-card--climate,
+.aurora-card--media,
+.aurora-card--camera,
+.aurora-card--hobby {
+  box-shadow:
+    var(--aurora-shadow-card),
+    0 18px 44px var(--aurora-card-light);
+}
+
+.aurora-text-gradient {
+  background: linear-gradient(90deg, #6fe8ff 0%, #6fb8ff 42%, #c27aff 78%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

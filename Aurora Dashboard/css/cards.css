@@ -1,23 +1,65 @@
+/* Structural card component. Optional reflections and glow live in effects.css. */
 ha-card,
 .aurora-card {
-  background: var(--aurora-surface, rgba(18, 27, 48, 0.82));
-  border: 1px solid var(--aurora-border, rgba(255, 255, 255, 0.10));
-  border-radius: var(--aurora-radius-card, 18px);
-  box-shadow: var(--aurora-shadow-card, 0 10px 30px rgba(0, 0, 0, 0.24));
-  color: var(--aurora-text-primary, rgba(255, 255, 255, 0.94));
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    var(--aurora-card-ambient),
+    var(--aurora-card-surface);
+  border: 1px solid var(--aurora-border);
+  border-radius: var(--aurora-radius-card);
+  box-shadow: var(--aurora-shadow-card);
+  color: var(--aurora-text-primary);
 }
 
 .aurora-card--hero {
-  border-radius: var(--aurora-radius-hero, 22px);
-  padding: var(--aurora-space-6, 24px);
+  border-radius: var(--aurora-radius-hero);
+  padding: var(--aurora-space-6);
+  box-shadow: var(--aurora-shadow-raised);
+}
+
+.aurora-card--compact {
+  min-height: 88px;
+  padding: var(--aurora-space-3);
 }
 
 .aurora-card--glass {
-  background: rgba(18, 27, 48, 0.72);
+  background: var(--aurora-card-surface);
 }
 
-@supports (backdrop-filter: blur(12px)) {
-  .aurora-card--glass {
-    backdrop-filter: blur(12px);
-  }
+.aurora-card--raised {
+  background:
+    var(--aurora-card-ambient),
+    linear-gradient(145deg, rgba(64, 87, 132, 0.78), rgba(21, 39, 71, 0.72));
+  box-shadow: var(--aurora-shadow-raised);
+}
+
+.aurora-card[data-state="active"],
+.aurora-card[aria-pressed="true"] {
+  border-color: rgba(111, 232, 255, 0.42);
+}
+
+.aurora-card[data-state="warning"] {
+  border-color: rgba(255, 187, 92, 0.44);
+}
+
+.aurora-card[data-state="error"],
+.aurora-card[data-state="unavailable"] {
+  border-color: rgba(255, 100, 126, 0.40);
+}
+
+.aurora-card[data-state="unavailable"] {
+  filter: saturate(72%);
+  opacity: 0.76;
+}
+
+.aurora-card:focus-visible {
+  outline: 2px solid var(--aurora-cyan);
+  outline-offset: 3px;
+}
+
+.aurora-card:active {
+  box-shadow: var(--aurora-shadow-pressed);
+  transform: translateY(0) scale(0.996);
 }

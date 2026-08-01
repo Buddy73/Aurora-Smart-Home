@@ -1,5 +1,8 @@
 # Aurora Implementatie v1.0 RC
 
+> Historisch implementatieverslag. De actuele architectuur en installatie staan
+> in `README.md`, `INSTALLATION.md` en `docs/MODULAR_STYLING.md`.
+
 ## Fase E1 — Project Foundation
 
 De Aurora-foundation centraliseert het visuele systeem zonder een parallel YAML-dashboard te introduceren.

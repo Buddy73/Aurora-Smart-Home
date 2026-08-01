@@ -1,5 +1,10 @@
 # Aurora Design System v1.0
 
+> De artistieke beslisregels voor sfeer en materiaalbeleving staan in
+> [`docs/DESIGN_VISION_ADDENDUM.md`](docs/DESIGN_VISION_ADDENDUM.md). Dit addendum
+> is leidend bij toekomstige ontwerpkeuzes, binnen de harde grenzen van
+> prestaties, leesbaarheid en functionaliteit.
+
 ## Ontwerpprincipes
 
 1. Informatiehiërarchie is belangrijker dan decoratie.
@@ -12,10 +17,10 @@
 
 ### Oppervlakken
 
-- Pagina: Aurora Midnight `#0B1020` met maximaal twee zachte gradients.
-- Kaart: `rgba(255,255,255,0.08)`.
-- Kaart-rand: `rgba(255,255,255,0.10)`.
-- Verhoogd oppervlak: `rgba(255,255,255,0.11)`.
+- Pagina: Aurora Midnight `#061126` met een diffuse cyaan-, paarse en groene atmosferische lichtlaag.
+- Kaart: gelaagd glas van `rgba(57,78,118,0.76)` naar `rgba(17,29,53,0.72)`.
+- Kaart-rand: `rgba(203,231,255,0.23)`.
+- Verhoogd oppervlak: `rgba(57,78,118,0.76)` met een zachte interne lichtbron.
 - Primaire tekst: `rgba(255,255,255,0.94)`.
 - Secundaire tekst: `rgba(255,255,255,0.68)`.
 
@@ -25,16 +30,17 @@ Gebruik een 4-pixelbasis: `4px` microafstand, `8px` compacte componenten, `12px`
 
 ### Vorm en schaduw
 
-- Kleine component: radius `12px`.
-- Standaard kaart: radius `18px`.
-- Hero Card: radius `22px`.
+- Kleine component: radius `14px`.
+- Standaard kaart: radius `20px`.
+- Hero Card: radius `26px`.
 - Rand: `1px solid rgba(255,255,255,0.10)`.
-- Schaduw: `0 10px 30px rgba(0,0,0,0.24)`.
-- Blur: maximaal `12px`, alleen waar ondersteund en noodzakelijk.
+- Schaduw: meerdere zachte dieptelagen met een minimale koele lichtinvloed.
+- Blur: richtwaarde `18px`, alleen waar ondersteund en noodzakelijk.
 
 ### Typografie
 
-Gebruik het standaard Home Assistant-lettertype voor compatibiliteit en prestaties.
+Gebruik de afgeronde systeemfontstack uit de Branding Guide. Externe webfonts
+zijn niet vereist; compatibiliteit en prestaties blijven leidend.
 
 - Paginatitel: 28–32px, semibold.
 - Sectietitel: 18–20px, semibold.

@@ -1,28 +1,40 @@
 :root {
   color-scheme: dark;
-  --aurora-midnight: #0b1020;
-  --aurora-surface: rgba(18, 27, 48, 0.82);
-  --aurora-surface-raised: rgba(255, 255, 255, 0.11);
-  --aurora-border: rgba(255, 255, 255, 0.10);
-  --aurora-text-primary: rgba(255, 255, 255, 0.94);
-  --aurora-text-secondary: rgba(255, 255, 255, 0.68);
-  --aurora-blue: #2f6fff;
-  --aurora-cyan: #39c6ff;
-  --aurora-emerald: #2ed573;
-  --aurora-purple: #7a5cff;
-  --aurora-amber: #ffb347;
-  --aurora-danger: #ff5f6d;
+  --aurora-midnight: #061126;
+  --aurora-surface: rgba(20, 39, 71, 0.72);
+  --aurora-surface-top: rgba(54, 78, 122, 0.78);
+  --aurora-surface-raised: rgba(61, 82, 132, 0.80);
+  --aurora-border: rgba(193, 226, 255, 0.28);
+  --aurora-highlight: rgba(255, 255, 255, 0.17);
+  --aurora-reflection: linear-gradient(118deg, rgba(255, 255, 255, 0.16) 0%, rgba(111, 232, 255, 0.06) 24%, transparent 49%);
+  --aurora-ambient-light: radial-gradient(circle at 84% 8%, rgba(111, 232, 255, 0.095), transparent 38%);
+  --aurora-card-ambient: radial-gradient(circle at 84% 8%, rgba(111, 232, 255, 0.095), transparent 38%);
+  --aurora-card-surface: linear-gradient(145deg, rgba(54, 78, 122, 0.78) 0%, rgba(20, 39, 71, 0.72) 54%, rgba(10, 24, 49, 0.78) 100%);
+  --aurora-text-primary: rgba(250, 252, 255, 0.96);
+  --aurora-text-secondary: rgba(222, 235, 249, 0.76);
+  --aurora-blue: #5b8cff;
+  --aurora-cyan: #6fe8ff;
+  --aurora-emerald: #48e0b0;
+  --aurora-purple: #a860ff;
+  --aurora-amber: #ffbb5c;
+  --aurora-danger: #ff647e;
   --aurora-space-1: 4px;
   --aurora-space-2: 8px;
   --aurora-space-3: 12px;
   --aurora-space-4: 16px;
   --aurora-space-6: 24px;
   --aurora-space-8: 32px;
-  --aurora-radius-sm: 12px;
-  --aurora-radius-card: 18px;
-  --aurora-radius-hero: 22px;
-  --aurora-shadow-card: 0 10px 30px rgba(0, 0, 0, 0.24);
-  --aurora-font-family: Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --aurora-radius-sm: 14px;
+  --aurora-radius-card: 20px;
+  --aurora-radius-hero: 26px;
+  --aurora-shadow-card: 0 22px 54px rgba(1, 6, 19, 0.38), 0 8px 30px rgba(91, 140, 255, 0.075), inset 0 1px 0 var(--aurora-highlight);
+  --aurora-shadow-raised: 0 32px 78px rgba(1, 6, 19, 0.44), 0 14px 42px rgba(168, 96, 255, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.19);
+  --aurora-shadow-pressed: 0 8px 22px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --aurora-blur: 18px;
+  --aurora-saturation: 132%;
+  --aurora-transition-fast: 180ms ease;
+  --aurora-font-family: "Nunito Sans", "Avenir Next Rounded", "Trebuchet MS", ui-rounded, system-ui, sans-serif;
+  --aurora-font-display: "Nunito Sans", "Avenir Next Rounded", "Trebuchet MS", ui-rounded, system-ui, sans-serif;
 }
 
 html,

@@ -1,5 +1,8 @@
 # Aurora v1.0.0 — Eindcontrole
 
+> Historisch kwaliteitsrapport van release v1.0.0. Project Polaris v1.1.0-rc.1
+> wordt opnieuw gevalideerd tijdens F6.
+
 ## Dashboardreview
 
 Alle acht Storage Mode-views zijn gecontroleerd op 1920×1080, 1024×768 en 390×844.

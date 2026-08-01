@@ -10,3 +10,15 @@ Dit voorkomt publicatie van:
 - apparaatnamen en lokale indeling.
 
 Gebruik voor publieke documentatie uitsluitend volledig geanonimiseerde demonstratiebeelden.
+
+De openbare demonstraties staan in:
+
+- `docs/mockups/aurora-public-demo-desktop.png`
+- `docs/mockups/aurora-public-demo-tablet.png`
+- `docs/mockups/aurora-public-demo-mobile.png`
+
+Deze gebruiken generieke labels, fictieve meetwaarden en abstracte
+camerategels.
+
+Toon in openbare beelden nooit een profielafbeelding, adres, woningbeeld,
+persoonlijke naam of installatiegebonden identifier.

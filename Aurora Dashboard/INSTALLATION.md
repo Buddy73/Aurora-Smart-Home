@@ -1,77 +1,164 @@
-# Installatiehandleiding
+# Aurora installeren
 
-## Vereisten
+Deze handleiding installeert de openbare Aurora-foundation in ongeveer 10–15
+minuten. Aurora gebruikt **Home Assistant Storage Mode** als enige actieve
+dashboardbron.
 
-- Een actuele Home Assistant-installatie.
-- Toegang tot de map `/config`.
+> De repository bevat bewust geen export van een privé-installatie. Het theme,
+> de eigen assets en de modulaire styling zijn direct herbruikbaar. Kaarten en
+> entity-ID’s moeten altijd aan de eigen Home Assistant-installatie worden
+> gekoppeld.
+
+## 1. Vereisten
+
+- Home Assistant Core 2024.4 of nieuwer met Sections View; de nieuwste stabiele
+  release wordt aanbevolen.
+- Toegang tot `/config`, bijvoorbeeld via Studio Code Server, Samba of SSH.
 - HACS.
-- De benodigde apparatuur en integraties.
+- Een bestaand of nieuw Storage Mode-dashboard.
 
-## Frontend installeren
+Installeer via **HACS → Frontend**:
 
-Installeer via HACS:
+| Component | Gebruik in Aurora | Vereist |
+|---|---|---|
+| Mushroom Cards | Primaire kaarten | Ja |
+| Bubble Card | Navigatie | Ja |
+| ApexCharts Card | Energiegrafieken | Voor Energie |
+| card-mod | Gerichte visuele verfijning | Ja |
 
-1. Mushroom Cards
-2. Bubble Card
-3. ApexCharts Card
-4. card-mod
+Herlaad de browser nadat HACS de frontendresources heeft geregistreerd.
 
-Herlaad de browser nadat frontendresources zijn gewijzigd.
+## 2. Bestanden kopiëren
 
-## Theme en assets
+Kopieer vanuit deze repository:
 
-1. Kopieer `themes/aurora.yaml` naar `/config/themes/aurora.yaml`.
-2. Kopieer de benodigde assets naar `/config/www/aurora/`.
-3. Controleer in `configuration.yaml`:
+```text
+Aurora Dashboard/themes/aurora.yaml
+    → /config/themes/aurora.yaml
 
-   ```yaml
-   frontend:
-     themes: !include_dir_merge_named themes
-   ```
+Aurora Dashboard/assets/logo/
+    → /config/www/aurora/
 
-4. Herlaad de themes of herstart Home Assistant wanneer de themeconfiguratie nieuw is.
-5. Selecteer het theme `Aurora`.
+Aurora Dashboard/assets/backgrounds/aurora-polaris-background.png
+    → /config/www/aurora/aurora-polaris-background.png
+```
 
-## Dashboard
+De mappen `assets/climate`, `assets/media` en `assets/devices` zijn optioneel.
+Plaats daar uitsluitend eigen afbeeldingen waarvoor je gebruiksrechten hebt.
 
-Aurora gebruikt uitsluitend Storage Mode:
+## 3. Theme activeren
+
+Voeg dit alleen toe wanneer `frontend:` nog niet in `configuration.yaml` staat:
+
+```yaml
+frontend:
+  themes: !include_dir_merge_named themes
+```
+
+Bestaat `frontend:` al, voeg dan uitsluitend de regel `themes:` aan dat bestaande
+blok toe. Maak nooit een tweede `frontend:`-sleutel.
+
+Een kopieerbaar, installatie-onafhankelijk voorbeeld staat in
+`examples/configuration.yaml`.
+
+Controleer daarna via **Ontwikkelaarstools → YAML → Configuratie controleren**.
+Herstart Home Assistant wanneer de map `themes` of `www` voor het eerst is
+aangemaakt. Kies vervolgens in het gebruikersprofiel het theme **Aurora**.
+
+## 4. Storage Mode-dashboard aanmaken
 
 1. Open **Instellingen → Dashboards**.
-2. Maak een dashboard met URL-pad `dashboard-aurora`.
-3. Open het dashboard en kies **Dashboard bewerken**.
-4. Bouw of importeer de goedgekeurde Storage Mode-configuratie.
-5. Registreer geen tweede YAML-dashboard.
+2. Kies **Dashboard toevoegen**.
+3. Gebruik als titel `Aurora` en als URL-pad `dashboard-aurora`.
+4. Laat **Alleen beheerders** uit wanneer huisgenoten Aurora mogen gebruiken.
+5. Open Aurora en voeg views van het type **Secties** toe.
+6. Gebruik `dashboard_map.md` als view- en sectiereferentie.
+7. Koppel kaarten uitsluitend aan entity-ID’s die in de eigen installatie
+   bestaan.
 
-De repository registreert bewust geen parallel Lovelace YAML-dashboard.
+Registreer geen parallel `lovelace: dashboards:` YAML-dashboard. Storage Mode
+blijft de enige bron van waarheid.
 
-## Entiteiten controleren
+## 5. Entiteiten koppelen
 
-Vergelijk vóór gebruik alle kaarten met:
+`entities.md` en `helpers.md` documenteren de referentie-installatie. Controleer
+iedere entity vóór gebruik via **Ontwikkelaarstools → Statussen**.
 
-- `entities.md`;
-- `helpers.md`.
+- Vervang een referentie-ID door het werkelijk bestaande ID van jouw apparaat.
+- Laat een kaart weg wanneer de benodigde integratie ontbreekt.
+- Verzin nooit entity-ID’s.
+- Publiceer geen privé-ID’s in screenshots of bugrapporten.
 
-Vervang installatiegebonden ID’s uitsluitend door werkelijk bestaande Home Assistant-entiteiten. Voeg geen placeholders toe.
+## 6. Integraties per view
 
-## Utility Meters
+| View | Mogelijke integraties |
+|---|---|
+| Energie | HomeWizard P1, GoodWe, Utility Meter |
+| Klimaat | Nest, Daikin |
+| Media | Spotify, Google Cast, televisies |
+| Camera’s | Ring of een andere camera-integratie |
+| Hobby | OctoPrint, lokale schakelaars en sensoren |
+| Rolluiken | Overkiz of een gelijkwaardige cover-integratie |
 
-`utility_meter.yaml` bevat bestaande dagmeters. Koppel dit bestand alleen wanneer de bronentiteiten daadwerkelijk beschikbaar zijn:
+Alle integraties zijn optioneel: verwijder de bijbehorende kaarten wanneer de
+apparatuur niet aanwezig is.
+
+## 7. Utility Meter (optioneel)
+
+Kopieer `utility_meter.yaml` alleen wanneer de bronentiteiten werkelijk bestaan.
+Koppel het bestand vervolgens één keer in `configuration.yaml`:
 
 ```yaml
 utility_meter: !include utility_meter.yaml
 ```
 
-Controleer daarna de configuratie via Home Assistant voordat opnieuw wordt gestart.
+Controleer de configuratie vóór een herstart. Helpers die via de Home Assistant
+UI zijn aangemaakt hoeven niet nogmaals in YAML te worden gedefinieerd.
 
-## Validatie
+## 8. Polaris-styling voor een bestaand Aurora-dashboard (gevorderd)
 
-Controleer na installatie:
+De bestanden in `scripts/` zijn geen volledige dashboardinstaller. Ze passen
+uitsluitend de goedgekeurde achtergrond- en headerstyling toe op een reeds
+bestaand dashboardbestand met de interne sleutel
+`lovelace.dashboard_aurora`.
 
-- alle acht views laden;
-- geen kaart meldt “Entiteit niet gevonden”;
-- Mushroom, Bubble Card en ApexCharts laden;
-- geen horizontale scroll op telefoon;
-- camera’s en media zijn bereikbaar;
-- energie-entiteiten leveren langetermijnstatistieken.
+Maak altijd eerst een Home Assistant-back-up. Gebruik het script alleen via SSH
+wanneer je begrijpt dat `.storage` normaal door Home Assistant wordt beheerd:
 
-Een wijziging in uitsluitend Storage Mode vereist normaal geen Home Assistant-herstart.
+```sh
+cd /config/aurora/scripts
+sh ./apply-polaris-storage.sh /config
+```
+
+Het script valideert de JSON met `jq` en maakt vóór iedere wijziging een
+gedateerde back-up. Herstart Home Assistant na toepassing.
+
+## 9. Eindcontrole
+
+- Aurora opent via `/dashboard-aurora/home`.
+- Alle views gebruiken Sections View.
+- Mushroom, Bubble Card, ApexCharts en card-mod laden zonder foutmelding.
+- Geen kaart toont `Entiteit niet gevonden` of `Custom element doesn't exist`.
+- Desktop heeft een rustige brede indeling.
+- Tablet gebruikt maximaal twee kolommen.
+- Telefoon heeft één kolom en geen horizontale scroll.
+- Camera- en mediakaarten tonen geen gegevens aan ongeautoriseerde gebruikers.
+- De browserconsole bevat geen terugkerende Aurora-fouten.
+
+## Bijwerken
+
+Maak vóór iedere update een Home Assistant-back-up. Vervang het theme en de
+eigen Aurora-assets, herlaad de themes en controleer daarna het dashboard.
+Overschrijf nooit automatisch een bestaande Storage Mode-configuratie.
+
+## Beperking van de huidige publieke versie
+
+Een volledig geanonimiseerde Storage Mode-importbundle is nog niet opgenomen.
+Daardoor installeert F3 de theme- en stylingfoundation binnen 10–15 minuten,
+maar niet automatisch alle voorbeeldviews. Een veilige demonstratiebundle kan
+pas worden toegevoegd nadat alle entity-verwijzingen parametriseerbaar zijn.
+
+Officiële achtergrondinformatie:
+
+- [Home Assistant Sections View](https://www.home-assistant.io/dashboards/sections/)
+- [Home Assistant dashboardviews](https://www.home-assistant.io/dashboards/views/)
