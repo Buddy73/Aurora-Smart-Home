@@ -1,5 +1,9 @@
 # Aurora Smart Home Dashboard
 
+<p align="center">
+  <img src="Aurora%20Dashboard/assets/logo/aurora-logo.png" alt="Aurora Smart Home" width="220">
+</p>
+
 Een modern, Nederlandstalig Home Assistant-dashboard voor desktop, tablet en telefoon.
 
 > Transparantie: Aurora is ontwikkeld door de maintainer met AI-assistentie van

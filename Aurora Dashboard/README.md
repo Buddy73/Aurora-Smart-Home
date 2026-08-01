@@ -1,5 +1,9 @@
 # Aurora Smart Home Dashboard v1.1.0-rc.1
 
+<p align="center">
+  <img src="assets/logo/aurora-logo.png" alt="Aurora Smart Home" width="220">
+</p>
+
 > **Aurora is ontwikkeld met de filosofie dat een smart-home-dashboard niet alleen functioneel moet zijn, maar ook rust, overzicht en plezier moet brengen in het dagelijks gebruik.**
 
 > **Transparantie:** Aurora is ontwikkeld door de maintainer met AI-assistentie
