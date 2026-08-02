@@ -1,8 +1,28 @@
-# Aurora Smart Home Dashboard v1.0.0
+# Aurora Smart Home Dashboard v1.1.0-rc.1
+
+<p align="center">
+  <img src="assets/logo/aurora-logo.png" alt="Aurora Smart Home" width="220">
+</p>
+
+> **Aurora is ontwikkeld met de filosofie dat een smart-home-dashboard niet alleen functioneel moet zijn, maar ook rust, overzicht en plezier moet brengen in het dagelijks gebruik.**
+
+> **Transparantie:** Aurora is ontwikkeld door de maintainer met AI-assistentie
+> van OpenAI Codex/ChatGPT. Ontwerpkeuzes en live dashboardgedrag zijn
+> gecontroleerd in een echte Home Assistant-installatie.
+
+## Modulaire styling
+
+De Project Polaris-styling is opgesplitst in afzonderlijk bruikbare Theme-, Dashboard-, Components- en Effects-pakketten. Zie [`docs/MODULAR_STYLING.md`](docs/MODULAR_STYLING.md) voor installatieprofielen en de bijbehorende entry points.
 
 Aurora is een modern, Nederlandstalig Home Assistant-dashboard voor dagelijks gebruik op desktop, tablet en telefoon. Het combineert energie, klimaat, verlichting, media, camera’s en 3D-printing in één consistente interface.
 
 ## Architectuur
+
+![Geanonimiseerde Aurora desktopdemonstratie](docs/mockups/aurora-public-demo-desktop.png)
+
+Publieke voorbeelden: [desktop](docs/mockups/aurora-public-demo-desktop.png),
+[tablet](docs/mockups/aurora-public-demo-tablet.png) en
+[smartphone](docs/mockups/aurora-public-demo-mobile.png).
 
 Home Assistant **Storage Mode** is de enige bron van waarheid voor het actieve dashboard. Wijzig actieve views uitsluitend via Home Assistant. De oude parallelle dashboard-YAML-bestanden zijn voor v1.0.0 verwijderd en blijven via de Git-geschiedenis herstelbaar.
 
@@ -57,8 +77,9 @@ Aurora bevat installatiegebonden entity_id’s. Neem nooit automatisch een ID ov
 
 - `themes/` — Home Assistant-theme en centraal CSS-manifest.
 - `css/` — onderhoudbare CSS-bronmodules.
-- `assets/` — logo’s en apparaatillustraties.
+- `assets/` — eigen Aurora-logo’s en achtergronden; optionele mappen voor lokaal toegevoegde apparaatafbeeldingen.
 - `docs/` — rapporten, screenshots en ontwerpdocumentatie.
+- `examples/` — veilige configuratiefragmenten zonder persoonlijke entities.
 - `entities.md` — centrale database voor fysieke entiteiten en hoofdentiteiten.
 - `helpers.md` — centrale database voor helpers en groepen.
 - `dashboard_map.md` — actuele view- en sectiestructuur.
@@ -93,6 +114,7 @@ opgenomen. Zie [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) voor het privacybeleid
 
 ## Documentatie
 
+- [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) — officiële bron voor architectuur, ontwerp, ontwikkeling en releases
 - [Installatiehandleiding](INSTALLATION.md)
 - [Gebruikershandleiding](USER_GUIDE.md)
 - [Dashboardstructuur](dashboard_map.md)
@@ -102,19 +124,34 @@ opgenomen. Zie [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) voor het privacybeleid
 - [Changelog](CHANGELOG.md)
 - [Release Notes](RELEASE_NOTES.md)
 - [Quality Report](docs/QUALITY_REPORT.md)
+- [Aurora als primaire gebruikersinterface](docs/AURORA_PRIMARY_UI.md)
+- [Modulaire styling](docs/MODULAR_STYLING.md)
+- [Veelgestelde vragen](FAQ.md)
+- [Problemen oplossen](TROUBLESHOOTING.md)
+- [Bijdragen](CONTRIBUTING.md)
+- [Securitybeleid](SECURITY.md)
+- [Open Source Readiness](docs/OPEN_SOURCE_READINESS.md)
+- [RC1 Acceptance Review](docs/RC1_ACCEPTANCE.md)
 
-## Ontwikkelregels
+## Ontwikkeling
 
-- Werk kleine, controleerbare wijzigingen uit.
-- Behoud bestaande functionaliteit.
-- Gebruik Nederlandse titels.
-- Gebruik Sections View en maximaal twee kolommen.
-- Gebruik Mushroom Cards als standaard.
-- Gebruik Bubble Card uitsluitend voor navigatie.
-- Gebruik ApexCharts voor grafieken.
-- Test desktop, tablet en mobiel.
-- Verhoog `VERSION` bij iedere projectwijziging.
+De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is de officiële bron
+voor architectuur, ontwerpkeuzes, componentregels, ontwikkeling en releases.
+Gebruik voor feitelijke Home Assistant-entiteiten uitsluitend
+[`entities.md`](entities.md) en voor helpers uitsluitend
+[`helpers.md`](helpers.md).
+
+## Aurora Design Pack
+
+De Home-view gebruikt het [Aurora Design Pack](AURORA_DESIGN_PACK.md): een
+visuele upgrade met Aurora-logo, Glow Hero Card en een consistente
+informatiehiërarchie. De upgrade wijzigt geen entiteiten, services of
+apparaatfunctionaliteit en blijft volledig binnen Storage Mode.
 
 ## Licentie
 
-Er is momenteel geen opensourcelicentie verleend. Alle rechten blijven voorbehouden aan de projecteigenaar. Zie [LICENSE.md](LICENSE.md).
+Aurora wordt uitgebracht onder de [MIT-licentie](LICENSE.md).
+
+Merknamen en productafbeeldingen van externe fabrikanten vallen niet onder de
+Aurora-licentie en worden daarom niet meegeleverd. Gebruikers kunnen optioneel
+eigen, rechtmatig verkregen apparaatafbeeldingen lokaal toevoegen.

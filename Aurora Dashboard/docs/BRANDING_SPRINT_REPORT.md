@@ -1,5 +1,8 @@
 # Aurora Branding Sprint — voortgangsrapport
 
+> Historisch implementatierapport. Voor de actuele publieke status gelden
+> `README.md`, `AURORA_DESIGN_SYSTEM.md` en `docs/OPEN_SOURCE_READINESS.md`.
+
 ## Fasestatus
 
 - Fase A — Audit en designreview: afgerond op basis van de actieve Storage Mode-audit en projectdocumentatie.

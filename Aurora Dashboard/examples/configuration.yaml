@@ -1,0 +1,8 @@
+# Aurora theme loader
+# Voeg dit samen met een bestaand frontend-blok; definieer frontend nooit dubbel.
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Optioneel: alleen activeren wanneer utility_meter.yaml is gekopieerd en alle
+# daarin gebruikte bronentiteiten in de eigen installatie bestaan.
+# utility_meter: !include utility_meter.yaml

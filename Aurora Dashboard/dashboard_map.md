@@ -2,13 +2,17 @@
 
 ```text
 Home
+├── Aurora Hero & persoonlijke begroeting
 ├── Vandaag
-├── Huisstatus
-├── Favorieten
-├── Snelle acties
-├── Scènes
-├── Widgets
-└── Livebeelden
+├── Live Energie
+├── Live Klimaat
+├── Media
+├── Veiligheid
+├── Kamers
+├── Favoriete apparaten & scènes
+├── Camera's
+├── 3D Printing Hub
+└── Systeemstatus
 
 Verlichting
 ├── Kamerbediening

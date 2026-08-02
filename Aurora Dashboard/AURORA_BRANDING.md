@@ -1,72 +1,101 @@
-# Aurora Branding Guide v1.0
+# Aurora Branding Guide v1.1
+
+> De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is leidend voor de
+> Aurora-visie en architectuur. Deze gids is de gedetailleerde merkreferentie.
+
+> De [Aurora Developer Handbook](DEVELOPER_HANDBOOK.md) is de centrale bron
+> voor brandingbesluiten; dit document blijft de gedetailleerde merkrefentie.
 
 ## Merkpositie
 
-Aurora is een rustig, premium Smart Home-product: modern, professioneel en tijdloos. De visuele identiteit ondersteunt de bediening en concurreert nooit met de inhoud.
+Aurora is een rustige, premium gebruikersinterface voor het slimme huis. De
+visuele identiteit ondersteunt informatie en bediening en concurreert nooit met
+de inhoud.
 
-## Definitieve richting
+## Project Polaris-richting
 
-Concept A — Modern Premium is de definitieve richting. Het combineert een diep donkerblauwe basis, subtiele Noorderlicht-gradients, terughoudend glassmorphism en één helder kleuraccent per view.
+Project Polaris combineert Modern Premium met een vriendelijke, afgeronde
+uitstraling. De interface gebruikt een diep donkerblauwe basis,
+Noorderlichtgradients, gelaagd glas en zachte lichtreflecties.
+
+De gewenste reactie is niet “wat veel effecten”, maar “dit voelt rustig en
+luxe”.
 
 ## Kleurenpalet
 
 | Token | Waarde | Gebruik |
 |---|---:|---|
-| Aurora Midnight | `#0B1020` | Hoofdachtergrond |
-| Aurora Blue | `#2F6FFF` | Home en primaire acties |
-| Aurora Cyan | `#39C6FF` | Klimaat en informatie |
-| Aurora Emerald | `#2ED573` | Energie en positieve status |
-| Aurora Purple | `#7A5CFF` | Media |
-| Aurora Amber | `#FFB347` | Verlichting |
-| Aurora Glass | `rgba(255,255,255,0.08)` | Kaartoppervlak |
+| Aurora Midnight | `#061126` | Hoofdachtergrond |
+| Aurora Blue | `#5B8CFF` | Primaire acties |
+| Aurora Cyan | `#6FE8FF` | Informatie en actieve iconen |
+| Aurora Emerald | `#48E0B0` | Positieve status en energie |
+| Aurora Purple | `#A860FF` | Media en secundair accent |
+| Aurora Amber | `#FFBB5C` | Verlichting en aandacht |
+| Aurora Danger | `#FF647E` | Fout of kritieke status |
+| Aurora Glass | `rgba(20,39,71,0.68)` | Kaartoppervlak |
 
-Gebruik kleur als betekenisvol accent. Grote, volledig verzadigde kleurvlakken zijn niet toegestaan.
+Gebruik kleur als betekenisvol accent. Grote volledig verzadigde vlakken,
+neon- en RGB-effecten zijn niet toegestaan.
 
-## Achtergronden per view
+## Materiaal
 
-- Home: Midnight met een zachte Aurora Blue-ochtendgloed.
-- Verlichting: donker antraciet met een subtiele Amber-gloed.
-- Woonkamer: warm grafiet met een rustige dieptewerking.
-- Klimaat: Midnight met een Cyan/blauwgroene gloed.
-- Energie: Midnight met Emerald/Cyan-gloed.
-- Media: donker paarsblauw met een zachte Purple-gloed.
-- Camera's: donker carbon-grijs met minimale koele gloed.
+- Gelaagde donkerblauwe glasoppervlakken.
+- Een dunne koele rand en zachte interne reflectie.
+- Subtiele diepte tussen achtergrond, kaart en verhoogde kaart.
+- Blur uitsluitend wanneer prestaties en leesbaarheid behouden blijven.
+- Decoratie mag bediening, grafieken en camerabeeld nooit afdekken.
 
-Geen foto's, video-achtergronden, drukke patronen of merkbare animaties.
+## Achtergrond
+
+De eigen Polaris-achtergrond gebruikt cyaan, paars en groen licht boven Aurora
+Midnight. Gebruik geen woningfoto’s, video-achtergronden of drukke patronen.
 
 ## Logo
 
-Gebruik uitsluitend de minimalistische Aurora-dashboardvariant als watermerk.
+Gebruik uitsluitend de goedgekeurde Aurora-varianten in `assets/logo/`.
 
-- Dekking: 5–8%.
-- Effect: lichte vervaging; geen animatie.
-- Home: gecentreerd.
-- Verlichting: onder midden.
-- Woonkamer: rechtsmidden.
-- Klimaat: linksboven.
-- Energie: rechtsboven.
-- Media: rechtsonder.
-- Camera's: linksonder.
+- Het logo mag duidelijk herkenbaar zijn.
+- Gebruik het als niet-interactief watermerk in een vrije zone.
+- Plaats geen kaart, grafiek of tekst over het logo.
+- Op kleinere schermen mag het zachter of kleiner worden weergegeven.
+- Geen animatie, vervorming of alternatieve kleurstelling.
 
-Het goedgekeurde transparante logo staat in `assets/logo/aurora-logo.png`. De geoptimaliseerde watermerkvariant staat in `assets/logo/aurora-logo-watermark.png` en gebruikt maximaal 8% dekking. Home Assistant laadt deze runtime-asset via `/local/aurora/aurora-logo-v1.png`.
+## Typografie
+
+Gebruik een afgeronde, vriendelijke fontstack met systeemfallbacks:
+
+```text
+Nunito Sans, Avenir Next Rounded, Trebuchet MS, ui-rounded, system-ui, sans-serif
+```
+
+Externe webfonts zijn optioneel; de interface moet zonder downloads bruikbaar
+en herkenbaar blijven.
 
 ## Iconografie
 
 - Gebruik Material Design Icons.
-- Gebruik één functie-icoon consequent in alle views.
-- Gebruik `mdi:string-lights` voor prikkabelverlichting, `mdi:wall-sconce-round` voor de lamp onder het afdak, `mdi:solar-power` voor PV, `mdi:thermometer` voor temperatuur, `mdi:television` voor tv en `mdi:cctv` voor camera's.
-- Een actieve status krijgt het viewaccent; inactief blijft neutraal.
+- Gebruik hetzelfde functie-icoon consequent in iedere view.
+- Actieve status krijgt een betekenisvol accent; inactief blijft neutraal.
+- Gebruik geen decoratieve iconen zonder functionele betekenis.
 
 ## Schrijfstijl
 
 - Nederlandse titels en korte labels.
-- Persoonlijke begroeting: `Goedemorgen, <naam>`.
-- Geen technische entity_id's in de interface.
-- Status vóór uitleg; vermijd overbodige tekst.
+- Status vóór uitleg.
+- Geen technische entity-ID’s in de interface.
+- Een persoonlijke begroeting is lokaal toegestaan.
+- Publieke voorbeelden gebruiken uitsluitend `Welkom thuis`.
+
+## Publieke beelden
+
+Toon nooit namen, profielfoto’s, adressen, woningbeelden, camera-inhoud, lokale
+paden of actuele installatiegegevens. Gebruik uitsluitend fictieve waarden en
+abstracte camerategels.
 
 ## Niet toegestaan
 
-- Felle neonvlakken of harde gradients.
-- Meerdere accentkleuren binnen één component.
-- Zware blur, grote achtergrondafbeeldingen of bewegende effecten.
-- Branding die bediening, camerabeeld of grafieken minder leesbaar maakt.
+- Felle neonvlakken, harde gradients of RGB-effecten.
+- Meerdere concurrerende accenten binnen één component.
+- Zware blur of merkbare achtergrondanimatie.
+- Branding die bediening of informatie minder leesbaar maakt.
+- Externe productafbeeldingen zonder aantoonbare distributielicentie.

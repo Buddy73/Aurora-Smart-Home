@@ -1,10 +1,18 @@
 # Aurora Smart Home Dashboard
 
+<p align="center">
+  <img src="Aurora%20Dashboard/assets/logo/aurora-logo.png" alt="Aurora Smart Home" width="220">
+</p>
+
 Een modern, Nederlandstalig Home Assistant-dashboard voor desktop, tablet en telefoon.
+
+> Transparantie: Aurora is ontwikkeld door de maintainer met AI-assistentie van
+> OpenAI Codex/ChatGPT. Ontwerpkeuzes en het live dashboardgedrag zijn
+> gecontroleerd in een echte Home Assistant-installatie.
 
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Storage%20Mode-41BDF5)](https://www.home-assistant.io/)
 
-## Aurora v1.0.0
+## Aurora v1.1.0-rc.1
 
 Aurora brengt de dagelijkse bediening van het slimme huis samen in acht consistente views:
 
@@ -17,16 +25,22 @@ Aurora brengt de dagelijkse bediening van het slimme huis samen in acht consiste
 - Camera’s
 - Hobby, Garage & Tuin
 
+![Aurora publieke desktopdemonstratie](Aurora%20Dashboard/docs/mockups/aurora-public-demo-desktop.png)
+
 Het actieve dashboard gebruikt uitsluitend Home Assistant Storage Mode.
 
 ## Documentatie
 
+- [Aurora Developer Handbook](Aurora%20Dashboard/DEVELOPER_HANDBOOK.md) — centrale ontwikkel- en architectuurbron
 - [Volledige project-README](Aurora%20Dashboard/README.md)
 - [Installatiehandleiding](Aurora%20Dashboard/INSTALLATION.md)
 - [Gebruikershandleiding](Aurora%20Dashboard/USER_GUIDE.md)
 - [Dashboardstructuur](Aurora%20Dashboard/dashboard_map.md)
 - [Entity Database](Aurora%20Dashboard/entities.md)
 - [Aurora Design System](Aurora%20Dashboard/AURORA_DESIGN_SYSTEM.md)
+- [Modulaire styling](Aurora%20Dashboard/docs/MODULAR_STYLING.md)
+- [Veelgestelde vragen](Aurora%20Dashboard/FAQ.md)
+- [Problemen oplossen](Aurora%20Dashboard/TROUBLESHOOTING.md)
 - [Changelog](Aurora%20Dashboard/CHANGELOG.md)
 - [Release Notes](Aurora%20Dashboard/RELEASE_NOTES.md)
 
@@ -47,4 +61,4 @@ De actuele stabiele versie staat onder **Releases** op GitHub.
 
 ## Licentie
 
-Alle rechten voorbehouden. Zie [LICENSE.md](Aurora%20Dashboard/LICENSE.md).
+Aurora wordt uitgebracht onder de [MIT-licentie](Aurora%20Dashboard/LICENSE.md).
